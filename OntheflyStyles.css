@@ -8,7 +8,7 @@
 	position: fixed;
 	left: 0px;
 	top 0;
-	background-color: black;
+	background-color: teal;
 	width: 100%;
 	text-align: center;
 }
@@ -23,7 +23,7 @@
 	text-decoration: none;
 	padding: 17px 16px;
 	display: block;
-	color: white;
+	color: orange;
 	text-align: center;
 	float: left;
 }
@@ -31,14 +31,14 @@
 {
 	padding: 17px 16px;
 	float: left;
-	color: white;
+	color: orange;
 	text-decoration: none;
 }
 .rechts
 {
 	padding: 17px 16px;
 	float: right;
-	color: white;
+	color: orange;
 	text-decoration: none;
 }
 
@@ -108,12 +108,23 @@ table, th, td {
     border: 1px solid #ccc;  
   }
 }
-
 .div1{
-		top: 250px;
-		left: 100px;
+	display: inline-block;
+	padding-top: 72px;
+	width: 30%;
 		}
 .div2{
-		top: 250px;
-		left: 100px;
+	display: inline-block;
+	padding-top: 72px;
+	width: 30%;
+		}
+.div3{
+	display: inline-block;
+	padding-top: 72px;
+	width: 30%;
+		}
+.div4{
+	display: inline-block;
+	padding-top: 72px;
+	width: 9%;
 		}
