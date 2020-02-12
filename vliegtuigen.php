@@ -36,7 +36,7 @@ try{
 		<div class="div3"><pre>     Zitplaatsen:<input type="Text" name="Zitplaatsen"/></pre></div>
 		
 		<div class="div4"><INPUT TYPE="submit" name="btnVerzend" VALUE="Versturen" /></div>
-		<div class="div4"><INPUT class='test3' TYPE="submit" name="btnOphalen" VALUE="Ophalen" />
+		<div class="div4"><INPUT class='test3' TYPE="submit" name="btnOphalen" VALUE="Ophalen" /></br>
 	</form>
 	</body>
 <html>
