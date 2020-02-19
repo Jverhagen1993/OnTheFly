@@ -111,19 +111,24 @@ table, th, td {
 .div1{
 	display: inline-block;
 	padding-top: 72px;
-	width: 30%;
+	width: 20%;
 		}
 .div2{
 	display: inline-block;
 	padding-top: 72px;
-	width: 30%;
+	width: 20%;
 		}
 .div3{
 	display: inline-block;
 	padding-top: 72px;
-	width: 30%;
+	width: 20%;
 		}
 .div4{
+	display: inline-block;
+	padding-top: 72px;
+	width: 20%;
+		}
+.div5{
 	display: inline-block;
 	padding-top: 72px;
 	width: 9%;

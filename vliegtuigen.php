@@ -34,9 +34,10 @@ try{
 		<div class="div1"><pre>     Type:<input type="Text" name="Type"/></pre></div>
 		<div class="div2"><pre>     Maatschappij:<input type="Text" name="Maatschappij"/></pre></div>
 		<div class="div3"><pre>     Zitplaatsen:<input type="Text" name="Zitplaatsen"/></pre></div>
+		<div class="div4"><pre>     Status:<input type="Text" name="Status"/></pre></div>
 		
-		<div class="div4"><INPUT TYPE="submit" name="btnVerzend" VALUE="Versturen" /></div>
-		<div class="div4"><INPUT class='test3' TYPE="submit" name="btnOphalen" VALUE="Ophalen" /></br>
+		<div class="div5"><INPUT TYPE="submit" name="btnVerzend" VALUE="Versturen" /></div></br></br>
+		<INPUT class='test3' TYPE="submit" name="btnOphalen" VALUE="Ophalen" /></br>
 	</form>
 	</body>
 <html>
@@ -48,6 +49,7 @@ if(isset($_POST["btnOphalen"])) {
 						<th>Type</th>
 						<th>Maatschappij</th>
 						<th>Zitplaatsen</th>
+						<th>Status</th>
 						</tr>";
         $query = "SELECT * FROM vliegtuig ORDER BY Maatschappij ASC";
         $stm = $con->prepare($query);
@@ -61,6 +63,7 @@ if(isset($_POST["btnOphalen"])) {
 						<td>$vliegtuig->Type</td>
 						<td>$vliegtuig->Maatschappij</td>
 						<td>$vliegtuig->Zitplaatsen</td>
+						<td>$vliegtuig->Status</td>
 						</tr>
 						 ";
 						
@@ -77,6 +80,7 @@ if(isset($_POST["btnVerzend"]))
 	$lijst["Type"] = $_POST["Type"];
 	$lijst["Maatschappij"] = $_POST["Maatschappij"];
 	$lijst["Zitplaatsen"] = $_POST["Zitplaatsen"];
+	$lijst["Status"] = $_POST["Status"];
 	
 	//var_dump($lijst);
 	
@@ -85,8 +89,8 @@ if(isset($_POST["btnVerzend"]))
 		echo $key.": ".$value."<br/>";
 	
 		}
-	$query = "INSERT INTO vliegtuig (Type, Maatschappij, Zitplaatsen)";
-	$query .= "VALUES ('{$lijst["Type"]}', '{$lijst["Maatschappij"]}', '{$lijst["Zitplaatsen"]}')";
+	$query = "INSERT INTO vliegtuig (Type, Maatschappij, Zitplaatsen, status)";
+	$query .= "VALUES ('{$lijst["Type"]}', '{$lijst["Maatschappij"]}', '{$lijst["Zitplaatsen"]}', '{$lijst["Status"]}')";
 
 	
 	$stm = $con->prepare($query);
